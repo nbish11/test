@@ -1,0 +1,12 @@
+language: node_js
+node_js: 6
+sudo: false
+matrix:
+  fast_finish: true
+deploy:
+  provider: npm
+  email: nbish11@hotmail.com
+  on:
+    tags: true
+  api_key:
+    secure: A5cgPEaYJ8WwsVv3LayRZ14glb/Duo1Dg19Ma3kgvkroP8hn1Gnxye0t1Fy8fPRn+8J4A8CozoY9xwM0MdxAlKtn5WJecZA4U0xGQMT4be0vwAyS+utew5QdEQlZ+JTf4JqL7ONbzeE9iNSYLYBe3P0alujCjaUr5n9zNOiHIYJ8Aq+Uh5oGV5aBLz53/kxqX1arUDmgjAzffaOfvmKNppV8+g+pegBAmt/m+jm/GihGAe6qzZG3sZP5sgpkwgByMpepKwG3DFIe7l4m7byVrRjJm1C+RZMFEEk3APYNBKr6w0q7gRgQLLkLgdf2ZYYUrseGLmY2zNpKPN1Yf/4p5y83K/rmNkNGh5Id02wJOzfoxE4cALklB/lfCE5/ChYLPUJJOO0mw6sWzK3+f7u7py6nbSGIrieDAML470MS+D4gq61A9o5Akf4GbISYtDzeeR+kCtv3BxBtA1HbqVQNmMeZ3VEkmg/al9kzSu/FeaP4AykmgLN/MxsFD3SivRfEFmolO3bj6npjwwDULCf+po/vfhOlWMEd4+SlHKh4YAY6mSSXbxQdBrmwa4Kpn3No/pezWZwOnkJEOEh1fS/LSM9n0K6RDgKvZcGzDTlLRNWn/AzLnKUdLtBxPUhH0gJQFY7Ug/nzPySGFGoK67vpotLhCfnTcoARZ1xccjQIKUc=

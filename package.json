@@ -1,0 +1,42 @@
+{
+  "name": "@nbish11/test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js --colors",
+    "lint:fix": "eslint index.js --colors --fix",
+    "push": "git push --follow-tags",
+
+    "prepublish": "echo prepublish...",
+    "publish": "echo publish...",
+    "postpublish": "echo postpublish...",
+
+    "preinstall": "echo preinstall...",
+    "install": "echo install...",
+    "postinstall": "echo postinstall...",
+
+    "preversion": "echo preversion...",
+    "version": "echo version...",
+    "postversion": "echo postversion...",
+
+    "pretest": "echo pretest...",
+    "test": "echo test...",
+    "posttest": "echo posttest...",
+
+    "build": "echo build..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbish11/test.git"
+  },
+  "author": "Nathan Bishop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nbish11/test/issues"
+  },
+  "homepage": "https://github.com/nbish11/test#readme",
+  "devDependencies": {
+    "eslint": "^3.3.1"
+  }
+}
