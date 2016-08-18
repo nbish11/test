@@ -2,7 +2,7 @@
   "name": "@nbish11/test",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/test.js",
   "scripts": {
     "lint": "eslint index.js --colors",
     "lint:fix": "eslint index.js --colors --fix",
