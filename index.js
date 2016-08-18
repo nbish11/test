@@ -1,2 +1,4 @@
 
-const VERSION = '1.0.2';
+const percentOf = require('./lib/percent-of.js').default;
+
+console.log(percentOf(60, 100));

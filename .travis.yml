@@ -1,12 +1,13 @@
 language: node_js
-node_js: 6
+node_js:
+    - 4
 sudo: false
+branches:
+    only:
+        - master
 matrix:
   fast_finish: true
-deploy:
-  provider: npm
-  email: nbish11@hotmail.com
-  on:
-    tags: true
-  api_key:
-    secure: c5a47b32-109e-4518-a750-dde17fd9aef5
+after_success:
+    - npm run semantic-release
+notifications:
+  email: false

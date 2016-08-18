@@ -6,8 +6,7 @@
   "scripts": {
     "lint": "eslint index.js --colors",
     "lint:fix": "eslint index.js --colors --fix",
-    "push": "git push --follow-tags",
-    "prepublish": "echo prepublish...",
+    "prepublish": "npm run build",
     "publish": "echo publish...",
     "postpublish": "echo postpublish...",
     "preinstall": "echo preinstall...",
@@ -19,7 +18,8 @@
     "pretest": "echo pretest...",
     "test": "echo test...",
     "posttest": "echo posttest...",
-    "build": "echo build..."
+    "build": "babel src/js -d lib",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,11 @@
   "homepage": "https://github.com/nbish11/test#readme",
   "devDependencies": {
     "babel-cli": "^6.11.4",
-    "eslint": "^3.3.1"
+    "babel-preset-es2015": "^6.13.2",
+    "eslint": "^3.3.1",
+    "semantic-release": "^4.3.5"
+  },
+  "dependencies": {
+    "mootools": "^1.5.2"
   }
 }
