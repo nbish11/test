@@ -2,7 +2,7 @@
   "name": "@nbish11/test",
   "version": "1.0.2",
   "description": "",
-  "main": "lib/test.js",
+  "main": "test.js",
   "scripts": {
     "lint": "eslint index.js --colors",
     "lint:fix": "eslint index.js --colors --fix",
@@ -18,7 +18,7 @@
     "pretest": "echo pretest...",
     "test": "echo test...",
     "posttest": "echo posttest...",
-    "build": "babel src/js -d lib",
+    "build": "babel src/js -d .",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
